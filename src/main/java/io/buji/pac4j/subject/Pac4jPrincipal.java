@@ -35,8 +35,15 @@ import java.util.List;
  */
 public class Pac4jPrincipal implements Principal, Serializable {
 
-    private final String principalNameAttribute;
-    private final LinkedHashMap<String, CommonProfile> profiles;
+    private String principalNameAttribute;
+    private LinkedHashMap<String, CommonProfile> profiles;
+
+
+    /**
+     * 提供默认的构造函数
+     */
+    public Pac4jPrincipal() {
+    }
 
     /**
      * Construct a Pac4jPrincipal.  The principal name returned will be 
